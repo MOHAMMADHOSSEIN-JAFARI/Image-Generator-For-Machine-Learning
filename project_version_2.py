@@ -15,7 +15,7 @@ from scipy.spatial import Voronoi
 import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.backends.backend_agg import FigureCanvasAgg as FigureCanvas
-
+import torch
 for i in range(image_number):
 
 
@@ -134,7 +134,10 @@ for i in range(image_number):
 # print(type(stored[0]))
 
 # plot the first image
-plt.imshow(stored[0])
+# plt.imshow(stored[0])
+stored_numpy = np.asarray(stored)
+
+stored_torch = torch.from_numpy(stored_numpy)
 
 
 
