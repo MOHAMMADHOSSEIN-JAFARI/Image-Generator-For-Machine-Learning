@@ -16,6 +16,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.backends.backend_agg import FigureCanvasAgg as FigureCanvas
 import torch
+import os
+os.environ["KMP_DUPLICATE_LIB_OK"]="TRUE"
 for i in range(image_number):
 
 
@@ -137,7 +139,7 @@ for i in range(image_number):
 # plt.imshow(stored[0])
 list_torch  = []
 for i in stored:
-    i = torch.from_numpy(i)
+    i = torch.from_numpy(i.astype(dtype='uint8', copy= True))
     list_torch.append(i)
 
 
