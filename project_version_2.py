@@ -135,9 +135,11 @@ for i in range(image_number):
 
 # plot the first image
 # plt.imshow(stored[0])
-stored_numpy = np.asarray(stored)
+list_torch  = []
+for i in stored:
+    i = torch.from_numpy(i)
+    list_torch.append(i)
 
-stored_torch = torch.from_numpy(stored_numpy)
 
 
 
