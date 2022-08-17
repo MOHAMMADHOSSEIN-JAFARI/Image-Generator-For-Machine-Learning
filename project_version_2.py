@@ -31,7 +31,7 @@ for i in range(image_number):
             polygon = vertices[region]
             ax.fill(*zip(*polygon), alpha=0.4)
 
-        ax.plot(points[:,0], points[:,1], 'ko')
+        #ax.plot(points[:,0], points[:,1], 'ko')
         ax.set_xlim(vor.min_bound[0] - 0.1, vor.max_bound[0] + 0.1)
         ax.set_ylim(vor.min_bound[1] - 0.1, vor.max_bound[1] + 0.1)
 
