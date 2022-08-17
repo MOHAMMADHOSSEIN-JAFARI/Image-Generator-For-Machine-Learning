@@ -18,6 +18,10 @@ from matplotlib.backends.backend_agg import FigureCanvasAgg as FigureCanvas
 import torch
 import os
 os.environ["KMP_DUPLICATE_LIB_OK"]="TRUE"
+
+colors = ['b','g','r', 'c', 'm', 'y', 'k']
+
+
 for i in range(image_number):
 
 
@@ -27,9 +31,11 @@ for i in range(image_number):
         ax = fig.add_axes([0,0,1,1])
 
     # colorize
+        def cell_Colors():
+            return np.random.choice(colors)
         for region in regions:
             polygon = vertices[region]
-            ax.fill(*zip(*polygon), alpha=0.4)
+            ax.fill(*zip(*polygon), cell_Colors(), alpha=0.4)
 
         #ax.plot(points[:,0], points[:,1], 'ko')
         ax.set_xlim(vor.min_bound[0] - 0.1, vor.max_bound[0] + 0.1)
