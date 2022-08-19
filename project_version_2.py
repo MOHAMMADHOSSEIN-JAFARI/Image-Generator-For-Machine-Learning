@@ -149,6 +149,35 @@ for i in stored:
     list_torch.append(i)
 
 
+# I am working on a new script to genereate voronoi images. It has more options. I am integrating it with my current code.
+
+"""
+# I am working on a new script to genereate voronoi images. It has more options. I am integrating it with my current code.
+
+from scipy.spatial import Voronoi, voronoi_plot_2d
+
+# make up data points
+points = np.random.rand(20,2)
+
+# add 4 distant dummy points
+points = np.append(points, [[999,999], [-999,999], [999,-999], [-999,-999]], axis = 0)
+
+# compute Voronoi tesselation
+vor = Voronoi(points)
+
+# plot
+voronoi_plot_2d(vor, line_colors='blue')
+
+# colorize
+for region in vor.regions:
+    if not -1 in region:
+        polygon = [vor.vertices[i] for i in region]
+        plt.fill(*zip(*polygon))
+
+# fix the range of axes
+plt.xlim([0,1]), plt.ylim([0,1])
+plt.show()
+"""
 
 
 
