@@ -19,7 +19,7 @@ print(image_tensor.size())
 
 # For example image numeber 1:
 
-img1 = image[0]
+img1 = image_tensor[0]
 
 print(img1.size())
 
