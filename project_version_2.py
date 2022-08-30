@@ -13,6 +13,9 @@ from matplotlib.backends.backend_agg import FigureCanvasAgg as FigureCanvas
 from PIL import Image
 import os
 import torchvision.transforms as transforms
+import os
+os.environ["KMP_DUPLICATE_LIB_OK"]="TRUE"
+import torch
 
 image = []
 
@@ -77,7 +80,7 @@ for i in range(image_number):
 
     plt.show()
     
-    import torch
+    
 
     
 # load image in RGB mode (png files contains additional alpha channel)
@@ -95,5 +98,7 @@ for i in range(image_number):
     image.append(tensor)
     
 image_tensor= torch.stack(image, dim=0) 
+
+
 
 
