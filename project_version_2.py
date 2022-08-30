@@ -27,7 +27,7 @@ print(explanation)
 n_height= int(input("write the number height for images: "))
 n_width=  int(input("write the number width for images: " ))
 RGB_or_Gray_Scale = input("The output can be tensor of RGB images or GrayScale images. For RGB write RGB, for Gray-Scale write L: ")
-Line_width=  int(input("What number for line width do you prefer, write an integer? " ))
+Line_width=  int(input("What number for line_thickness do you prefer, write an integer such as 1 or 2? " ))
 n_seeds= int(input("write the number seeds for images: "))
 
 
