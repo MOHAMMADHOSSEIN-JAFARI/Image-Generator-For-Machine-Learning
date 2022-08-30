@@ -4,7 +4,7 @@ Created on Thu Aug  4 02:00:31 2022
 
 @author: unimi
 """
-from project_version_2.py import *
+from project_version_2 import *
 
 # for RGB images the chnnel = 3 and for Grayscale, the channel = 1
 
