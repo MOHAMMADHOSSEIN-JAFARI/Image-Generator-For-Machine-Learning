@@ -32,5 +32,13 @@ from torchvision.utils import save_image
 
 save_image(img1, 'img1.png')
 
+ask_to_save = input('Do you need to save the generated tensor as a file with .pt format, Write your answer with Yes or No? ')
+
+
+# print(ask_to_save)
+
+if ask_to_save == 'Yes':
+    name = input('Please write a desired name for the generated file: ' )
+    torch.save(image_tensor , '{}.pt'.format(name))
 
        
