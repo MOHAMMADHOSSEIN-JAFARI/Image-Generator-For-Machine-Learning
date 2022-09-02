@@ -1,4 +1,7 @@
 # image_processing
+# Project Name
+> Abstract of the project or small introduction of what the project is about
+<hr>
 
 The explanation is based on the code final_project.py and final_project_test.py. 
 •	The code can generate a batch of Voronoi images. Each image is a PyTorch tensor with 3 dimensions which are [channel, height, width]. The dimension is [3, height, width] for RGB images, and for grayscale images, it is [1, height, width]
