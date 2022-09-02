@@ -6,7 +6,7 @@
 * [Setup](#setup)
 
 ## General info
-This project is simple Lorem ipsum dolor generator.
+*The code can generate a batch of Voronoi images. Each image is a PyTorch tensor with 3 dimensions which are [channel, height, width]. The dimension is [3, height, width] for RGB images, and for grayscale images, it is [1, height, width]
 	
 ## Technologies
 Project is created with:
