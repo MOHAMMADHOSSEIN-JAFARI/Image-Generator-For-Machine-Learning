@@ -37,11 +37,47 @@ RGB_or_Gray_Scale = input("The output can be tensor of RGB images or GrayScale i
 
 Line_width=  int(input("What number for line_thickness do you prefer, write an integer such as 1 or 2? " ))
 
+
+
+vertices= input('Do you like to show verticies, Write your answer with True or False? ')
+
+showing_point= input('Do you like to show Voronoi points, Write your answer with True or False? ')
+
+#The list "colors" has a collection of colors, and cells and boundaries are collered based on the colors of this list.
+
+if vertices == 'True':
+    vertices_show = True
+else: 
+    vertices_show = False
+
+
+
+
+if showing_point == 'True':
+    points_show = True
+    voronoi_point_size = int(input("Please write the size of the voronoi point: "))
+else: 
+    points_show = False
+
+if points_show == True:
+     cell_point = voronoi_point_size
+else:
+    cell_point = False
+    
+
+
+
+
 n_seeds= int(input("write the number seeds for images: "))
 
+np.random.seed(n_seeds)
 
 
-# The list color has a collection of colors, and cells and boundaries are collered based on the colors of this list.
+
+
+
+
+
 
 colors = ['b','g','r', 'c', 'm', 'y', 'k']
 
@@ -53,7 +89,7 @@ def boundary_Colors():
 """
 for i in range(image_number):
     point_number= int(input("write the number of points for image number {}: ".format(i+1) )) 
-    np.random.seed(n_seeds)
+    
     from scipy.spatial import Voronoi, voronoi_plot_2d
 # make up data points
     points = np.random.rand(point_number,2)
@@ -67,11 +103,11 @@ for i in range(image_number):
         return np.random.choice(colors)    
     voronoi_plot_2d(vor, 
                     ax = None, 
-                    show_points = None ,
-                    show_vertices = None, 
+                    show_points = points_show ,
+                    show_vertices = vertices_show, 
                     line_colors= boundary_Colors(), 
                     line_width = Line_width, 
-                    point_size= 2 )
+                    point_size= cell_point )
 # colorize
     def cell_Colors():
         return np.random.choice(colors)
@@ -94,11 +130,11 @@ for i in range(image_number):
     
 
     
-# load image in RGB mode (png files contains additional alpha channel)
+# The image is loaded. It can be loaded as RGB or Gray_Scale. 
     img = Image.open('image.png').convert(RGB_or_Gray_Scale) # or RGB
 
     
-# set up transformation to resize the image
+# set up transformation to resize the image. The desired size of the image is implemented.
     resize = transforms.Resize([n_height, n_width])
     img = resize(img)
     type(img)
