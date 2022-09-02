@@ -4,6 +4,8 @@ Created on Fri Jul 29 10:59:51 2022
 
 @author: Mohammadhossein Jafari 
 """
+# The needed packeges are imported
+
 import cv2
 import PIL
 from scipy.spatial import Voronoi
@@ -19,22 +21,31 @@ import torch
 
 image = []
 
+# The needed information is gotten from the user
 
-image_number= int(input("write the number of images: " ))
+image_number= int(input("write the number of Voronoi images that you want to generate: " ))
 
 explanation= "You have to fill the needed data for each of {} images".format(image_number)
+
 print(explanation)
-n_height= int(input("write the number height for images: "))
-n_width=  int(input("write the number width for images: " ))
+
+n_height= int(input("write the height number for images: "))
+
+n_width=  int(input("write the width number for images: " ))
+
 RGB_or_Gray_Scale = input("The output can be tensor of RGB images or GrayScale images. For RGB write RGB, for Gray-Scale write L: ")
+
 Line_width=  int(input("What number for line_thickness do you prefer, write an integer such as 1 or 2? " ))
+
 n_seeds= int(input("write the number seeds for images: "))
 
 
 
-
+# The list color has a collection of colors, and cells and boundaries are collered based on the colors of this list.
 
 colors = ['b','g','r', 'c', 'm', 'y', 'k']
+
+
 """
 def boundary_Colors():
         return np.random.choice(colors)
