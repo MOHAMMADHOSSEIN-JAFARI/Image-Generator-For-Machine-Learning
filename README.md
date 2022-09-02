@@ -1,6 +1,6 @@
-# image_processing
-# Project Name
-> Abstract of the project or small introduction of what the project is about
+
+# Generating Voronoi Images
+> Voronoi diagrams have applications in almost all areas of science and engineering. Biological structures can be described using them. In aviation, they are used to identify the nearest airport in case of diversions. In mining, they can aid estimation of overall mineral resources based on exploratory drill holes
 <hr>
 
 The explanation is based on the code final_project.py and final_project_test.py. 
