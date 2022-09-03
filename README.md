@@ -2,9 +2,9 @@
 
 ## Table of contents
 * [Introduction](#Introduction)
-* [Generating diverse Images](#Generating diverse Images)
+* [Generating diverse Images](#Generating_diverse_Images)
 * [Technologies](#technologies)
-* [Repository Contents](#Repository Contents)
+* [Repository Contents](#Repository_Contents)
 * [Methodology](#Methodology)
 
 ## Introduction:
