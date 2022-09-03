@@ -28,6 +28,7 @@ Voronoi images have applications in different fields. For example, in natural sc
 
 
 
+
 	
 ## Technologies
 * The code has been implemented in Python version 3.8.8.
@@ -46,6 +47,7 @@ Voronoi images have applications in different fields. For example, in natural sc
 ## Methodology
 * It is suggested to run the script final_project_test.py. The needed information is gotten from the user to generate images. It is suggested to the data carefully.
 * Firstly, the needed information is gotten from the user. Based on the number of batches, a for loop is run for each image. With the help of the scipy.spatial which has Voronoi, voronoi_plot_2d, the image is generated in the format of matplotlib. Then the image is stored with the name of image.png in the directory where the script is run.  After that, the image.png is opened as Grayscales or RGB and it is resized to the desired size. After that, it is transformed into a PyTorch tensor, and it is added to the image_tensor. Again, the for loop is run for the second image and it is overwritten on the previous image. Therefore, at each moment, just one image is in the directory. 
+* For each user some options are important. For example,  a user needs to generate images that has a speicail number for the thickness of boundaries while the other user may want to have images whose voronoi points have a size of 3. Thereofre, it is not compulsory that each user try to modify all the options. 
 
 * All the generated images are stored in a PyTorch tensor named image_tensor which has 4 dimensions, which are [batch, channel, height, width]. 
 * It is known that the goal is to store the images as PyTorch tensors, and it is not needed to save images in .png format. Just to show that the code works correctly, the first image is converted from a PyTorch tensor to an image in the format of img1.png
