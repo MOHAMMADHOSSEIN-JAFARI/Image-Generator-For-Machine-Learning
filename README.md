@@ -20,7 +20,7 @@ Voronoi images have applications in different fields. For example, in natural sc
 * RGB or Grayscale
 * Number of randomly sampled points for each image
 * The thickness of boundaries between cells
-* Possibility of highlighting the vertices, 
+* Possibility of highlighting the vertices. I have to explain when the numebr of voronoi points in an image is small it works well, but when the number of points is large, it decreases the quality of image. Thefrefore, it is suggested to use this option when the number of random points is less than 40
 * Possibility of showing the Voronoi point of each cell
 * Choosing the desired size for the Voronoi point, 
 * The possibility of saving the output PyTorch tensor as a file with .pt format
