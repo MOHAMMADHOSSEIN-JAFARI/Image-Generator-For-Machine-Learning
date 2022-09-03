@@ -2,7 +2,7 @@
 
 ## Table of contents
 * [Introduction](#Introduction)
-* [Generating diverse Images](#Generating_diverse_Images)
+* [Generating_Diverse_Images](#Generating_diverse_Images)
 * [Technologies](#technologies)
 * [Repository Contents](#Repository_Contents)
 * [Methodology](#Methodology)
@@ -12,10 +12,10 @@
  
 Voronoi images have applications in different fields. For example, in natural sciences, it is possible to explain biological structures by them. They have also many applications in Engineering and Urban Management. The task of this project was to generate Voronoi images that can be used for image Labeling. The images are generated randomly, and they are saved in a PyTorch tensor. The script has been made in a way to generate a wide of Voronoi images.
 <hr>
-## Generating diverse Images
+## Generating_Diverse_Images
 It is possible to generate a wide variety of images. The followings are configurable:
 * The batch which is the number of images
-* Image size
+*  Image size
 * RGB or Grayscale
 * Number of randomly sampled points for each image
 * The thickness of boundaries between cells
@@ -36,7 +36,6 @@ It is possible to generate a wide variety of images. The followings are configur
 * NumPy version 1.20.1
 * PIL version 8.2.0
 * matplotlib version 3.3.4
-*
 
 ## Repository Contents
 * The main files of the task are final_project.py, final_project_test.py, final_project_test.ipynb. the file final_project_test.ipynb works well in GoogleColab
