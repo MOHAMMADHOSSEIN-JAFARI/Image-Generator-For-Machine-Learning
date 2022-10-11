@@ -25,10 +25,6 @@ Voronoi images have applications in different fields. For example, in natural sc
 * Choosing the desired size for the Voronoi point
 * The possibility of saving the output PyTorch tensor as a file with .pt format
 * The seed for randomness
-
-
-
-
 	
 ## Technologies
 * The code has been implemented in Python version 3.8.8
