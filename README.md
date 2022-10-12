@@ -1,4 +1,5 @@
-# Generating Voronoi Images
+# Image_Generating_For_Machine_Learning
+
 
 ## Table of contents
 * [Introduction](#Introduction)
