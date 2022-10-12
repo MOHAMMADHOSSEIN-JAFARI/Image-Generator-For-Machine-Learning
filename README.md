@@ -15,13 +15,13 @@ Voronoi images have applications in different fields. For example, in natural sc
 
 
 ## Generating_Diverse_Images
-* It is possible to generate a wide variety of images. The followings are configurable:
+It is possible to generate a wide variety of images. The followings are configurable:
 * The batch which is the number of images
 * Image size
 * RGB or Grayscale
 * Number of randomly sampled points for each image
 * The thickness of boundaries between cells
-* Possibility of highlighting the vertices. I have to explain when the numebr of voronoi points in an image is small it works well, but when the number of points is large, it decreases the quality of image. Thefrefore, it is suggested to use this option when the number of random points is less than 40
+* Possibility of highlighting the vertices. I have to explain when the number of Voronoi points in an image is small it works well, but when the number of points is large, it decreases the quality of the image. Therefore, it is suggested to use this option when the number of random points is less than 40
 * Possibility of showing the Voronoi point of each cell
 * Choosing the desired size for the Voronoi point
 * The possibility of saving the output PyTorch tensor as a file with .pt format
