@@ -11,7 +11,7 @@
 ## Introduction:
 
  
-Voronoi images have applications in different fields. For example, in natural sciences, it is possible to explain biological structures by them. They have also many applications in Engineering and Urban Management. The task of this project was to generate Voronoi images that can be used for image Labeling. The images are generated randomly, and they are saved in a PyTorch tensor. The script has been made in a way to generate a wide of Voronoi images.
+Voronoi images have applications in different fields. For example, in natural sciences, it is possible to explain biological structures by them. They have also many applications in Engineering and Urban Management. The task of this project was to generate Voronoi images that can be used for image labeling in Machine Learning. The images are generated randomly, and they are saved in as a PyTorch tensor. The script has been made in a way to generate a wide range of Voronoi images.
 
 
 ## Generating_Diverse_Images
